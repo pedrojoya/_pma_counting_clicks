@@ -1,6 +1,7 @@
 package es.iessaladillo.pedrojoya.countingclicks;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import es.iessaladillo.pedrojoya.countingclicks.databinding.MainActivityBinding;
@@ -19,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupViews() {
-        b.btnClickMe.setOnClickListener(v -> incrementAndShow());
+        b.btnClickMe.setOnClickListener(this::incrementAndShow);
     }
 
-    private void incrementAndShow() {
+    private void incrementAndShow(View v) {
         times++;
         showTimes();
     }
