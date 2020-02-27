@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showTimes() {
-        b.lblTimes.setText(getString(R.string.main_times, times));
+        b.lblTimes.setText(getResources().getQuantityString(R.plurals.main_times, times, times));
     }
 
 }
