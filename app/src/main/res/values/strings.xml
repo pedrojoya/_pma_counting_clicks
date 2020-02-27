@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CountingClicks</string>
+    <string name="main_btnClickMe">Click me!</string>
+    <plurals name="main_timesClicked">
+        <item quantity="one">%1$d time</item>
+        <item quantity="other">%1$d times</item>
+    </plurals>
+</resources>
