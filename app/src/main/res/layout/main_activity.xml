@@ -11,8 +11,8 @@
         android:id="@+id/lblTimes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        tools:text="0 veces" />
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        tools:text="0 times" />
 
     <Button
         android:id="@+id/btnClickMe"

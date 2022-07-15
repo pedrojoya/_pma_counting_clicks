@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViews() {
         b.btnClickMe.setOnClickListener(this::incrementAndShow);
+        showTimes();
     }
 
     private void incrementAndShow(View v) {
