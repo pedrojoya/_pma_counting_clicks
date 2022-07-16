@@ -8,19 +8,19 @@ import es.iessaladillo.pedrojoya.countingclicks.databinding.MainActivityBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MainActivityBinding b;
+    private MainActivityBinding binding;
     private int times;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        b = MainActivityBinding.inflate(getLayoutInflater());
-        setContentView(b.getRoot());
+        binding = MainActivityBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         setupViews();
     }
 
     private void setupViews() {
-        b.btnClickMe.setOnClickListener(this::incrementAndShow);
+        binding.btnClickMe.setOnClickListener(this::incrementAndShow);
         showTimes();
     }
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showTimes() {
-        b.lblTimes.setText(getResources().getQuantityString(R.plurals.main_times, times, times));
+        binding.lblTimes.setText(getResources().getQuantityString(R.plurals.main_times, times, times));
     }
 
 }
